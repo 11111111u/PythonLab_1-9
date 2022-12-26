@@ -1,0 +1,45 @@
+import numpy as np
+Z = np.zeros(10)
+Z[4]= 1
+print(Z)
+print("///////////Second task//////////")
+A = np.arange(10,50)
+print(A)
+print("///////////Third task//////////")
+B = np.arange(50)
+B = B[::-1]
+print(B)
+print("///////////Fourth task//////////")
+C = np.arange(9).reshape(3,3)
+print(C)
+print("///////////Fifth task//////////")
+D = np.random.random((10,10))
+Dmin = D.min()
+Dmax = D.max()
+print(Dmin,Dmax)
+print("///////////Sixth task//////////")
+E = np.random.random(30)
+m = E.mean()
+print(m)
+print("///////////Seventh task//////////")
+F = np.zeros((8,8), dtype=int)
+F[1::2,::2] = 1
+F[::2,1::2] = 1
+print(F)
+print("///////////Eighth task//////////")
+G = np.random.random((10,2))
+X,Y =G[:,0],G[:,1]
+R = np.hypot(X,Y)
+T = np.arctan2(Y,X)
+print(R)
+print(T)
+print("///////////Ninth task//////////")
+H = np.random.random(10)
+H[H.argmax()] = 0
+print(H)
+print("///////////Tenth task//////////")
+I = np.arange(100)
+v = np.random.uniform(0,100)
+index = (np.abs(I-v)).argmin()
+
+print(I[index])
